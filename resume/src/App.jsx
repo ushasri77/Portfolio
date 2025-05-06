@@ -105,11 +105,7 @@ const App = () => {
           <a href="mailto:ushasripalabindela@gmail.com" className="underline text-pink-300 text-xl">
             ushasripalabindela@gmail.com
           </a>
-          <div class="socials">
-        <a href="mailto:ushasri@example.com">✉️</a>
-        <a href="http://linkedin.com/in/ushasri-palabindela-5b56b7235">🔗</a>
-        
-      </div>
+          
         </div>
       </section>
     </div>
