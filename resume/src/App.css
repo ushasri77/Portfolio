@@ -1,0 +1,76 @@
+/* Reset & base styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Hero Section with vibrant gradient */
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb, #fad0c4, #ffd1ff);
+  background-size: 400% 400%;
+  animation: heroGradient 15s ease infinite;
+  color: white;
+  position: relative;
+}
+
+@keyframes heroGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Section layout shared styles */
+.section-bg {
+  min-height: 100vh;
+  padding: 6rem 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  color: black;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Background colors for each section */
+.about-section {
+  background: linear-gradient(to bottom, #ffe6f0, #fff0f5);
+}
+
+.projects-section {
+  background: linear-gradient(to bottom, #e3f2fd, #e1f5fe);
+}
+
+.skills-section {
+  background: linear-gradient(to bottom, #e8fce8, #f1f8e9);
+}
+
+.contact-section {
+  background: linear-gradient(to bottom, #fff8e1, #fff3e0);
+}
+
+/* Typography */
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+section p {
+  font-size: 1.5rem;
+  line-height: 2.2;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
