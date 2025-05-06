@@ -1,42 +1,138 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Reset and base */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #444;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 40px;
+  background: transparent;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  margin-left: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffa3dc;
+}
+
+/* Hero / Landing */
+.hero {
   text-align: center;
+  padding: 100px 20px 80px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.greeting {
+  color: #ffb3e6;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.name {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #ffc278;
+  margin: 0.5rem 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.role {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ddd;
 }
 
-.card {
-  padding: 2em;
+.description {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 2rem;
 }
 
-.read-the-docs {
-  color: #888;
+.contact-info {
+  margin-top: 1.5rem;
+}
+
+.contact-btn {
+  padding: 10px 20px;
+  border: 2px solid #d37ab0;
+  border-radius: 20px;
+  color: #d37ab0;
+  text-decoration: none;
+  margin-right: 15px;
+  transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: #d37ab0;
+  color: #fff;
+}
+
+.email {
+  color: #eee;
+  text-decoration: underline;
+}
+
+/* General Sections */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #555;
+  margin-top: 20px;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffd1dc;
+}
+
+.section p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* Skills */
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+/* Projects */
+.project {
+  background-color: #666;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 700px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.project h3 {
+  color: #ffc278;
+  margin-bottom: 10px;
 }
